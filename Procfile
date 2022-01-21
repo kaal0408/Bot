@@ -1,2 +1,2 @@
-worker: python3 -m jasmin
+worker: python3 -m Jasmin
 ps:scale worker=1
