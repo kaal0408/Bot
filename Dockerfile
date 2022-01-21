@@ -74,7 +74,7 @@ COPY ./Jasmin/sample_config.py ./Jasmin/config.py* /root/Jasmin/Jasmin/
 ENV PATH="/home/bot/bin:$PATH"
 
 # Install requirements
-RUN pip3 install -U -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # Starting Worker
 CMD ["python3","-m","Jasmin"]
