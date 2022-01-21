@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/KristinaBot
-RUN git clone -b shiken https://github.com/kaal0408/jasmin/root/jasmin
-WORKDIR /root/jasmin
+# Copy Python Requirements to /root/Jasmin
+RUN git clone -b shiken https://github.com/kaal0408/Jasmin/root/Jasmin
+WORKDIR /root/Jasmin
 
 #Copy config file to /root/KristinaBot/KristinaBot
-COPY ./jasmin/sample_config.py ./jasmin/config.py* /root/jasmin/KristinaBot/
+COPY ./Jasmin/sample_config.py ./Jasmin/config.py* /root/Jasmin/Jasmin/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","jasmin"]
+CMD ["python3","-m","Jasmin"]
