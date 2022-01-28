@@ -64,7 +64,6 @@ better_profanity
 textblob 
 nudepy
 
-motor
 cloudscraper
 Ffmpeg
 
