@@ -113,7 +113,12 @@
     "ALLOW_EXCL": {
        "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
        "value": "True"
-    }
+    },
+    "EVENT_LOGS": {
+        "description": "Set Your Gban Logs id for example: -100232567384",
+        "required": "True",
+        "value": ""
+   }
     
  }
 }
