@@ -202,7 +202,7 @@ def start(update: Update, context: CallbackContext):
                         text="SUPPORT", 
                         url=f"https://t.me/DYNA_SUPPORT"),
                     InlineKeyboardButton(
-                        text="DEVLOPER", 
+                        text="DEVELOPER", 
                         url=f"https://t.me/DYNA_OPTIMISE")
                     
                 ],
@@ -241,7 +241,7 @@ def bot_about_callback(update: Update, context: CallbackContext):
                 [
                    [
                      InlineKeyboardButton(text="Support", url="https://t.me/DYNA_SUPPORT"),
-                     InlineKeyboardButton(text="News", url="https://t.me/DYNA_NETWORK"),
+                     InlineKeyboardButton(text="Update", url="https://t.me/DYNA_NETWORK"),
                    ],
                    [
                     InlineKeyboardButton(text="Back", callback_data="bot_back")
