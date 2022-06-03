@@ -200,10 +200,10 @@ def start(update: Update, context: CallbackContext):
                 [
                     InlineKeyboardButton(
                         text="SUPPORT", 
-                        url=f"https://t.me/MAMBA_X_SUPPORT"),
+                        url=f"https://t.me/DYNA_SUPPORT"),
                     InlineKeyboardButton(
                         text="DEVLOPER", 
-                        url=f"https://t.me/ITZ_SUKHI")
+                        url=f"https://t.me/DYNA_OPTIMISE")
                     
                 ],
                 
@@ -240,8 +240,8 @@ def bot_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                    [
-                     InlineKeyboardButton(text="Support", url="https://t.me/MAMBA_X_SUPPORT"),
-                     InlineKeyboardButton(text="News", url="https://t.me/MAMBA_NETWORK"),
+                     InlineKeyboardButton(text="Support", url="https://t.me/DYNA_SUPPORT"),
+                     InlineKeyboardButton(text="News", url="https://t.me/DYNA_NETWORK"),
                    ],
                    [
                     InlineKeyboardButton(text="Back", callback_data="bot_back")
