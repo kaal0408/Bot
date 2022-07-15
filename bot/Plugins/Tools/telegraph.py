@@ -27,7 +27,7 @@ async def tgraph(event):
             )
             end = datetime.now()
             ms = (end - start).seconds
-            h = await event.reply("Downloaded to {} in {} seconds.".format(downloaded_file_name, ms))
+            h = await event.reply("𝔇𝔬𝔴𝔫𝔩𝔬𝔞𝔡𝔢𝔡 𝔱𝔬 {} 𝔦𝔫 {} 𝔰𝔢𝔠𝔬𝔫𝔡𝔰.".format(downloaded_file_name, ms))
             if downloaded_file_name.endswith((".webp")):
                 resize_image(downloaded_file_name)
             try:
