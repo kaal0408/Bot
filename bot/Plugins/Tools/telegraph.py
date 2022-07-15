@@ -40,7 +40,7 @@ async def tgraph(event):
                 end = datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                await h.edit("Uploaded to https://telegra.ph{} in {} seconds.".format(media_urls[0], (ms + ms_two)), link_preview=True)
+                await h.edit("𝔘𝔭𝔩𝔬𝔞𝔡𝔢𝔡 𝔱𝔬 https://telegra.ph{} 𝔦𝔫 {} 𝔰𝔢𝔠𝔬𝔫𝔡𝔰.".format(media_urls[0], (ms + ms_two)), link_preview=True)
         elif input_str == "t":
             user_object = await tbot.get_entity(r_message.sender_id)
             title_of_page = user_object.first_name # + " " + user_object.last_name
@@ -68,7 +68,7 @@ async def tgraph(event):
             )
             end = datetime.now()
             ms = (end - start).seconds
-            await event.reply("Pasted to https://telegra.ph/{} in {} seconds.".format(response["path"], ms), link_preview=True)
+            await event.reply("𝔓𝔞𝔰𝔱𝔢𝔡 𝔱𝔬 https://telegra.ph/{} 𝔦𝔫 {} 𝔰𝔢𝔠𝔬𝔫𝔡𝔰.".format(response["path"], ms), link_preview=True)
     else:
         await event.reply("Reply to a message to get a permanent telegra.ph link.")
 
