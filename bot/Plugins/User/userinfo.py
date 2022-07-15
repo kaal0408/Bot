@@ -563,7 +563,7 @@ Examples:
  ‣ `/ginfo`*:* get information about a Group. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/bot_Updates)
+ Come and see [Updates](https://t.me/MAMBA_X_NETWORK)
 """
 __mod_name__ = "Infos"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
