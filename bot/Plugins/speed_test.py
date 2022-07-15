@@ -44,7 +44,7 @@ def speedtestxyz_callback(update: Update, context: CallbackContext):
 
         elif query.data == "speedtest_text":
             result = speed.results.dict()
-            replymsg += f"\nDownload: `{convert(result['download'])}Mb/s`\nUpload: `{convert(result['upload'])}Mb/s`\nPing: `{result['ping']}`"
+            replymsg += f"\n𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝: `{convert(result['download'])}Mb/s`\n𝐔𝐩𝐥𝐨𝐚𝐝: `{convert(result['upload'])}Mb/s`\n𝕻𝖎𝖓𝖌: `{result['ping']}`"
             update.effective_message.edit_text(replymsg, parse_mode=ParseMode.MARKDOWN)
     else:
         query.answer("You are required to join Heroes Association to use this command.")
