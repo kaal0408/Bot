@@ -8,7 +8,7 @@ __mod_name__ = "Github"
 
 __help__ = """ Get Your Github Profile information by using this Command - 
 
- ‣ `/github HeroXxD` - will send profile of your github account """
+ ‣ `/github DYNANETWORK` - will send profile of your github account """
 
 def github(update: Update, context: CallbackContext):
     bot = context.bot
@@ -16,7 +16,7 @@ def github(update: Update, context: CallbackContext):
     args = message.text.split(" ", 1)
     
     if len(args) == 1:
-        message.reply_text('Provide me Username, Ex - /git HeroxXd')
+        message.reply_text('Provide me Username, Ex - /git DYNANETWORK')
         return
     else:
         pass
