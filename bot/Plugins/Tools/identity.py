@@ -12,9 +12,9 @@ from telegram.ext import CallbackContext, run_async
 
 def fakeid(update: Update, context: CallbackContext):
     message = update.effective_message
-    dltmsg = message.reply_text("generating fake identity for you...")
+    dltmsg = message.reply_text("𝕲𝖊𝖓𝖊𝖗𝖆𝖙𝖎𝖓𝖌 𝖋𝖆𝖐𝖊 𝖎𝖉𝖊𝖓𝖙𝖎𝖙𝖞 𝖋𝖔𝖗 𝖞𝖔𝖚...")
     fake = Faker()
-    print("FAKE DETAILS GENERATED\n")
+    print("𝕯𝖊𝖙𝖆𝖎𝖑𝖘 𝕲𝖊𝖓𝖊𝖗𝖆𝖙𝖎𝖓𝖌\n")
     name = str(fake.name())
     fake.add_provider(internet)
     address = str(fake.address())
@@ -25,7 +25,7 @@ def fakeid(update: Update, context: CallbackContext):
     android = fake.android_platform_token()
     pc = fake.chrome()
     message.reply_text(
-        f"<b> Fake Information Generated</b>\n<b>Name :-</b><code>{name}</code>\n\n<b>Address:-</b><code>{address}</code>\n\n<b>IP ADDRESS:-</b><code>{ip}</code>\n\n<b>credit card:-</b><code>{cc}</code>\n\n<b>Email Id:-</b><code>{email}</code>\n\n<b>Job:-</b><code>{job}</code>\n\n<b>android user agent:-</b><code>{android}</code>\n\n<b>Pc user agent:-</b><code>{pc}</code>",
+        f"<b> 𝕱𝖆𝖐𝖊 𝖎𝖓𝖋𝖔𝖗𝖒𝖆𝖙𝖎𝖔𝖓 𝖌𝖊𝖓𝖊𝖗𝖆𝖙𝖊𝖉 </b>\n<b>𝔑𝔞𝔪𝔢 :-</b><code>{name}</code>\n\n<b>𝔄𝔡𝔡𝔯𝔢𝔰𝔰:-</b><code>{address}</code>\n\n<b>ℑ𝔭-𝔄𝔡𝔡𝔯𝔢𝔰𝔰 :-</b><code>{ip}</code>\n\n<b>ℭ𝔯𝔢𝔡𝔦𝔱 𝔠𝔞𝔯𝔡:-</b><code>{cc}</code>\n\n<b>𝔈𝔪𝔞𝔦𝔩-𝔦𝔡:-</b><code>{email}</code>\n\n<b>𝔍𝔬𝔟:-</b><code>{job}</code>\n\n<b>𝔄𝔫𝔡𝔯𝔬𝔦𝔡 𝔲𝔰𝔢𝔯 𝔞𝔤𝔢𝔫𝔱:-</b><code>{android}</code>\n\n<b>𝔓𝔠 𝔲𝔰𝔢𝔯 𝔞𝔤𝔢𝔫𝔱:-</b><code>{pc}</code>",
         parse_mode=ParseMode.HTML,
     )
 
