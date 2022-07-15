@@ -166,19 +166,19 @@ def gban(update: Update, context: CallbackContext):
         chat_origin = f"<b>{chat.id}</b>\n"
 
     log_message = (
-        f"#GBANNED\n"
-        f"<b>Originated from:</b> <code>{chat_origin}</code>\n"
-        f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
-        f"<b>Banned User:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
-        f"<b>Banned User ID:</b> <code>{user_chat.id}</code>\n"
-        f"<b>Event Stamp:</b> <code>{current_time}</code>"
+        f"𝐆𝐁𝐀𝐍𝐍𝐄𝐃\n"
+        f"<b>𝔒𝔯𝔦𝔤𝔦𝔫𝔞𝔱𝔢𝔡 𝔣𝔯𝔬𝔪:</b> <code>{chat_origin}</code>\n"
+        f"<b>𝔄𝔡𝔪𝔦𝔫:</b> {mention_html(user.id, user.first_name)}\n"
+        f"<b>𝔅𝔞𝔫𝔫𝔢𝔡 𝔲𝔰𝔢𝔯:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
+        f"<b>𝔅𝔞𝔫𝔫𝔢𝔡 𝔲𝔰𝔢𝔯 ℑ𝔇:</b> <code>{user_chat.id}</code>\n"
+        f"<b>𝔈𝔳𝔢𝔫𝔱 𝔖𝔱𝔞𝔪𝔭:</b> <code>{current_time}</code>"
     )
 
     if reason:
         if chat.type == chat.SUPERGROUP and chat.username:
-            log_message += f'\n<b>Reason:</b> <a href="https://telegram.me/{chat.username}/{message.message_id}">{reason}</a>'
+            log_message += f'\n<b>𝕽𝖊𝖆𝖘𝖔𝖓:</b> <a href="https://telegram.me/{chat.username}/{message.message_id}">{reason}</a>'
         else:
-            log_message += f"\n<b>Reason:</b> <code>{reason}</code>"
+            log_message += f"\n<b>𝕽𝖊𝖆𝖘𝖔𝖓:</b> <code>{reason}</code>"
 
     if EVENT_LOGS:
         try:
@@ -231,14 +231,14 @@ def gban(update: Update, context: CallbackContext):
 
     if EVENT_LOGS:
         log.edit_text(
-            log_message + f"\n<b>Chats affected:</b> <code>{gbanned_chats}</code>",
+            log_message + f"\n<b>𝕮𝖍𝖆𝖙𝖘 𝖆𝖋𝖋𝖊𝖈𝖙𝖊𝖉:</b> <code>{gbanned_chats}</code>",
             parse_mode=ParseMode.HTML,
         )
     else:
         send_to_list(
             bot,
             INSPECTOR + REQUESTER,
-            f"Gban complete! (User banned in <code>{gbanned_chats}</code> chats)",
+            f"𝕲𝖇𝖆𝖓 𝖈𝖔𝖒𝖕𝖑𝖊𝖙𝖊!! (𝔘𝔰𝔢𝔯 𝔟𝔞𝔫𝔫𝔢𝔡 𝔦𝔫 <code>{gbanned_chats}</code> chats)",
             html=True,
         )
 
