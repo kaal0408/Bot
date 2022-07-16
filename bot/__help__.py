@@ -1,7 +1,6 @@
 import importlib, re
 from bot import dispatcher, ALLOW_EXCL, LOGGER
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from bot.Handlers.misc import paginate_modules
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext
 from telegram.utils.helpers import escape_markdown
