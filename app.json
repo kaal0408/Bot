@@ -29,17 +29,17 @@
     "TOKEN": {
        "description": "Your bot token. Get one from @BotFather duh",
        "required": true,
-       "value": ""
+       "value": "5409278625:AAEj3vltcJvquxGSrPdTdhvkGxa5SPOJPPY"
     },
     "API_ID": {
        "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
        "required": true,
-       "value": "3160248"
+       "value": "12471986"
     },
     "API_HASH": {
        "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
        "required": true,
-       "value": "da866bcad3446898c4d4a20fa10b9d09"
+       "value": "14f1673eebfb00c9a5ca38b838ac3455"
     },    
     "SQLALCHEMY_DATABASE_URI": {
        "description": "Your postgres sql db, empty this field if you dont have one.",
@@ -49,42 +49,42 @@
     "OWNER_ID": {
        "description": "Your user ID as an integer.",
        "required": true,
-       "value": ""
+       "value": "5318941221"
     },
 
     "BOT_NAME": {
        "description": "Insert below your bot, it will appear everywhere",
        "required": true,
-       "value": ""
+       "value": "MAMBA"
     },
     "OWNER_USERNAME": {
        "description": "Your username without the @",
-       "value": ""
+       "value": "ITS_BLACKMAMBA"
     },
     "SUPPORT_CHAT": {
        "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
        "required": true,
-       "value": ""
+       "value": "MAMBA_X_SUPPORT"
     },      
     "PHOTO": {
        "description": "Your Telegram Bot Image (Add Link Only).",
        "required": true,
-       "value": ""
+       "value": "https://telegra.ph/file/1bb20c5dddcc3bb39ebbf.jpg"
     },      
     "DEV_USERS": {
        "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
        "required": false,
-       "value": ""
+       "value": "5413539015"
     },
     "INSPECTOR": {
        "description": "A space separated list of user IDs who you want to assign as inspector users.",
        "required": false,
-       "value": ""
+       "value": "5413539015"
     },
     "REQUESTER": {
        "description": "A space separated list of user IDs who you wanna assign as requester(gban perms only).",
        "required": false,
-       "value": ""
+       "value": "5413539015"
     },
     "ENV": {
        "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -117,7 +117,7 @@
     "EVENT_LOGS": {
         "description": "Set Your Gban Logs id for example: -100232567384",
         "required": "True",
-        "value": ""
+        "value": "-1001549452504"
    }
     
  }
