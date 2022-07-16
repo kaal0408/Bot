@@ -11,7 +11,6 @@ from bot import dispatcher, LOGGER
 from bot.Plugins.disable import DisableAbleCommandHandler
 from bot.Handlers.validation import user_admin, user_not_admin
 from bot.Handlers.extraction import extract_text
-from bot.Handlers.misc import split_message
 from bot.Plugins.Admin.log_channel import loggable
 from bot.Plugins.Admin.warns import warn
 from bot.Handlers.string_handling import extract_time
