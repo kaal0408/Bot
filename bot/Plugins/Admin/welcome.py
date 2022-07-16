@@ -15,10 +15,6 @@ from bot import (
 from bot.Handlers.validation import (
     is_user_ban_protected, user_admin, connection_status,
 )
-from bot.Handlers.misc import (
-    build_keyboard,
-    revert_buttons,
-)
 from bot.Handlers.msg_types import get_welcome_type
 from bot.Handlers.string_handling import (
     escape_invalid_curly_brackets, markdown_parser,
