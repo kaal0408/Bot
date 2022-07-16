@@ -3,7 +3,6 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from bot.Handlers.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
