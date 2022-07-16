@@ -35,7 +35,7 @@ from bot.Handlers.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from bot.Handlers.misc import send_to_list
+
 
 GBAN_ENFORCE_GROUP = 6
 STRICT_GBAN = True
