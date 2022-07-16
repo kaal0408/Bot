@@ -8,7 +8,6 @@ from bot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, INSPECTOR
 from bot.Plugins.disable import DisableAbleCommandHandler
 from bot.Handlers.managers import MessageHandlerChecker
 from bot.Handlers.validation import user_admin, connection_status
-from bot.Handlers.misc import build_keyboard, revert_buttons
 from bot.Handlers.msg_types import get_note_type
 from bot.Handlers.string_handling import (
     escape_invalid_curly_brackets,
