@@ -18,7 +18,6 @@ from bot.Handlers.extraction import (
     extract_user_and_text,
 )
 from bot.Handlers.filters import CustomFilters
-from bot.Handlers.misc import split_message
 from bot.Handlers.string_handling import split_quotes
 from bot.Plugins.Admin.log_channel import loggable
 from bot.Database import warns_sql as sql
