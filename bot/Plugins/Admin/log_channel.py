@@ -6,7 +6,8 @@ from telegram.ext import CallbackContext
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
-    from telegram import ParseMode, Update
+    ###from telegram import ParseMode, Update
+    
     from telegram.error import BadRequest, Unauthorized
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
